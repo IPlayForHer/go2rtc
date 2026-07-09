@@ -1,0 +1,22 @@
+modules:
+  - api
+  - rtsp
+  - webrtc
+  - petkit
+
+api:
+  listen: ":1984"
+
+rtsp:
+  listen: ":8554"
+
+webrtc:
+  listen: ":8555"
+
+streams:
+  petkit_main:
+    - "petkit-shm:/media_buffer_frame_buf?video=main"
+  petkit_main_audio:
+    - "petkit-shm:/media_buffer_frame_buf?video=main&audio=1"
+  petkit_sub:
+    - "petkit-shm:/media_buffer_frame_buf?video=sub"

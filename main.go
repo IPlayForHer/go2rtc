@@ -32,6 +32,7 @@ import (
 	"github.com/AlexxIT/go2rtc/internal/nest"
 	"github.com/AlexxIT/go2rtc/internal/ngrok"
 	"github.com/AlexxIT/go2rtc/internal/onvif"
+	"github.com/AlexxIT/go2rtc/internal/petkit"
 	"github.com/AlexxIT/go2rtc/internal/pinggy"
 	"github.com/AlexxIT/go2rtc/internal/ring"
 	"github.com/AlexxIT/go2rtc/internal/roborock"
@@ -87,6 +88,7 @@ func main() {
 		{"ffmpeg", ffmpeg.Init},
 		// Hardware sources
 		{"alsa", alsa.Init},
+		{"petkit", petkit.Init},
 		{"v4l2", v4l2.Init},
 		// Other sources
 		{"bubble", bubble.Init},
